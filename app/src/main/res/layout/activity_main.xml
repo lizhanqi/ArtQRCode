@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity">
+    <top.lizhanqi.www.cropperlib.CropImageView
+            android:id="@+id/pick_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="500dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/guide_img"
+    />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+        <Button
+                android:onClick="inMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="嵌入模式"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="86dp" />
+        <Button
+                         android:onClick="imageMode"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="图片模式"
+                         tools:layout_editor_absoluteX="214dp"
+                         tools:layout_editor_absoluteY="86dp" />
+        <Button
+                android:onClick="gifMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gif模式"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="86dp" />
+        <Button
+                android:onClick="logoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="logo模式"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="86dp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+        <Button
+                android:layout_margin="20dp"
+                android:onClick="make"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生成"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="86dp" />
+        <Button
+                android:layout_margin="20dp"
+                android:onClick="save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="86dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
